@@ -1,3 +1,6 @@
+# Obsidian project
+.obsidian/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

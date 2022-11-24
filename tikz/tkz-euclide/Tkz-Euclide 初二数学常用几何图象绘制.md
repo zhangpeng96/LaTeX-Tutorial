@@ -94,30 +94,30 @@
 
 \begin{tikzpicture}
 \begin{scope}
-	\node at (1,-.5){(1)};
-	\tkzDefPoints{.8/0/A, 1.2/1.5/B}
-	\tkzDrawSegments(A,B)
-	\tkzDrawPoints(A,B)
+    \node at (1,-.5){(1)};
+    \tkzDefPoints{.8/0/A, 1.2/1.5/B}
+    \tkzDrawSegments(A,B)
+    \tkzDrawPoints(A,B)
 \end{scope}
 \begin{scope}[xshift=2cm]
-	\node at (.5,-.5){(2)};
-	\tkzDefPoints{0/0/A, .6/1.5/B, 1.2/0/C}
-	\tkzDrawPolygon(A,B,C)
-	\tkzDrawPoints(A,B,C)
+    \node at (.5,-.5){(2)};
+    \tkzDefPoints{0/0/A, .6/1.5/B, 1.2/0/C}
+    \tkzDrawPolygon(A,B,C)
+    \tkzDrawPoints(A,B,C)
 \end{scope}
 \begin{scope}[xshift=4cm]
-	\node at (.5,-.5){(3)};
-	\tkzDefPoints{0/0/A, 1.2/0/B, 1/1.5/C, .2/1.5/D}
-	\tkzDrawPolygon(A,B,C,D)
-	\tkzDrawPoints(A,B,C,D)
-	\tkzDrawSegments(A,C B,D)
+    \node at (.5,-.5){(3)};
+    \tkzDefPoints{0/0/A, 1.2/0/B, 1/1.5/C, .2/1.5/D}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawPoints(A,B,C,D)
+    \tkzDrawSegments(A,C B,D)
 \end{scope}
 \begin{scope}[xshift=6cm]
-	\node at (.5,-.5){(4)};
-	\tkzDefPoints{0.2/0/A, 1.2/0/B, 1.6/.8/C,.7/1.2/D, -.2/.7/E}
-	\tkzDrawPolygon(A,B,C,D,E)
-	\tkzDrawSegments(A,C A,D B,D B,E C,E)
-	\tkzDrawPoints(A,B,C,D,E)
+    \node at (.5,-.5){(4)};
+    \tkzDefPoints{0.2/0/A, 1.2/0/B, 1.6/.8/C,.7/1.2/D, -.2/.7/E}
+    \tkzDrawPolygon(A,B,C,D,E)
+    \tkzDrawSegments(A,C A,D B,D B,E C,E)
+    \tkzDrawPoints(A,B,C,D,E)
 \end{scope}
 \end{tikzpicture}
 ```
@@ -248,18 +248,18 @@
 
 ```latex
 \begin{tikzpicture}
-	\tkzDefPoints{0/0/B,2/0/C,3/1.5/D}
-	\tkzDefParallelogram(B,C,D) \tkzGetPoint{A}
-	\tkzDrawPolygon(A,B,C,D)
-	\tkzDrawSegments(A,C B,D)
-	\tkzInterLL(A,C)(B,D) \tkzGetPoint{O}
-	\tkzDefMidPoint(A,O) \tkzGetPoint{E}
-	\tkzDefMidPoint(B,O) \tkzGetPoint{F}
-	\tkzDrawSegments(E,F)
-	\tkzDrawPoints[size=2](E,F)
-	\tkzLabelPoints[above](A,D)
-	\tkzLabelPoints[below](B,C,F,O)
-	\tkzLabelPoints[right](E)
+    \tkzDefPoints{0/0/B,2/0/C,3/1.5/D}
+    \tkzDefParallelogram(B,C,D) \tkzGetPoint{A}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzDrawSegments(A,C B,D)
+    \tkzInterLL(A,C)(B,D) \tkzGetPoint{O}
+    \tkzDefMidPoint(A,O) \tkzGetPoint{E}
+    \tkzDefMidPoint(B,O) \tkzGetPoint{F}
+    \tkzDrawSegments(E,F)
+    \tkzDrawPoints[size=2](E,F)
+    \tkzLabelPoints[above](A,D)
+    \tkzLabelPoints[below](B,C,F,O)
+    \tkzLabelPoints[right](E)
 \end{tikzpicture}
 ```
 
@@ -269,21 +269,21 @@
 
 ```latex
 \begin{tikzpicture}
-	\tkzDefPoints{0/0/B, 1.4/2.7/A, 1.8/0/C}
-	\tkzDrawPolygon(B,C,A)
-	\tkzDefMidPoint(A,C) \tkzGetPoint{D}
-	\tkzDefMidPoint(A,B) \tkzGetPoint{E}
-	\tkzDrawSegments(C,E B,D)
-	\tkzInterLL(C,E)(B,D) \tkzGetPoint{O}
-	\tkzDrawPoints[size=2](O)
-	\tkzDefMidPoint(O,B) \tkzGetPoint{M}
-	\tkzDefMidPoint(O,C) \tkzGetPoint{N}
-	\tkzDrawPolygon(E,M,N,D)
-	\tkzLabelPoints[above](A,O)
-	\tkzLabelPoints[below](B,C,M,N)
-	\tkzLabelPoints[left](E)
-	\tkzLabelPoints[right](D)
-	\tkzMarkRightAngle[size=0.15](B,O,C)
+    \tkzDefPoints{0/0/B, 1.4/2.7/A, 1.8/0/C}
+    \tkzDrawPolygon(B,C,A)
+    \tkzDefMidPoint(A,C) \tkzGetPoint{D}
+    \tkzDefMidPoint(A,B) \tkzGetPoint{E}
+    \tkzDrawSegments(C,E B,D)
+    \tkzInterLL(C,E)(B,D) \tkzGetPoint{O}
+    \tkzDrawPoints[size=2](O)
+    \tkzDefMidPoint(O,B) \tkzGetPoint{M}
+    \tkzDefMidPoint(O,C) \tkzGetPoint{N}
+    \tkzDrawPolygon(E,M,N,D)
+    \tkzLabelPoints[above](A,O)
+    \tkzLabelPoints[below](B,C,M,N)
+    \tkzLabelPoints[left](E)
+    \tkzLabelPoints[right](D)
+    \tkzMarkRightAngle[size=0.15](B,O,C)
 \end{tikzpicture}
 ```
 
@@ -470,19 +470,19 @@
 
 ```latex
 \begin{tikzpicture}
-	\tkzInit[xmin=-4.4,xmax=1,ymin=-1,ymax=1]
-	\tkzAxeX
-	\tkzDefPoints{0/0/A, 0/1/B, -2/1/C}
-	\tkzDefParallelogram(A,B,C) \tkzGetPoint{D}
-	\tkzDrawPolygon(A,B,C,D)
-	\tkzCompass[color=red,delta=25](A,C)
-	\tkzCalcLength[cm](A,C)\tkzGetLength{ACl}
-	\tkzDefPoint(-\ACl, 0){D}
-	\tkzDrawPoints[size=2](A,C,D)
-	\tkzDrawSegments(A,C)
-	\tkzLabelPoints[above](C)
-	\tkzLabelPoints[above left](D)
-	\tkzLabelPoints[above right](A)
+    \tkzInit[xmin=-4.4,xmax=1,ymin=-1,ymax=1]
+    \tkzAxeX
+    \tkzDefPoints{0/0/A, 0/1/B, -2/1/C}
+    \tkzDefParallelogram(A,B,C) \tkzGetPoint{D}
+    \tkzDrawPolygon(A,B,C,D)
+    \tkzCompass[color=red,delta=25](A,C)
+    \tkzCalcLength[cm](A,C)\tkzGetLength{ACl}
+    \tkzDefPoint(-\ACl, 0){D}
+    \tkzDrawPoints[size=2](A,C,D)
+    \tkzDrawSegments(A,C)
+    \tkzLabelPoints[above](C)
+    \tkzLabelPoints[above left](D)
+    \tkzLabelPoints[above right](A)
 \end{tikzpicture}
 ```
 
