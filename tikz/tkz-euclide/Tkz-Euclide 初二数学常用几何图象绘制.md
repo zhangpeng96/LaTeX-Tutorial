@@ -1,9 +1,6 @@
 
 
-
-
-
-![[tikz/figures/1-1.png]]
+![](figures/1-1.png)
 
 ```latex
 \begin{tikzpicture}
@@ -18,7 +15,7 @@
 \end{tikzpicture}
 ```
 
-![[1-2.png]]
+![](figures/1-2.png)
 
 ```latex
 \begin{tikzpicture}
@@ -35,7 +32,7 @@
 \end{tikzpicture}
 ```
 
-![[1-3.png]]
+![](figures/1-3.png)
 
 ```latex
 \begin{tikzpicture}
@@ -50,7 +47,7 @@
 \end{tikzpicture}
 ```
 
-![[1-4.png]]
+![](figures/1-4.png)
 
 ```latex
 \begin{tikzpicture}
@@ -68,7 +65,7 @@
 ```
 
 
-![[1-5.png]]
+![](figures/1-5.png)
 
 ```latex
 \begin{tikzpicture}
@@ -91,7 +88,7 @@
 ```
 
 
-![[2-1.png]]
+![](figures/2-1.png)
 
 ```latex
 
@@ -126,7 +123,7 @@
 ```
 
 
-![[2-2.png]]
+![](figures/2-2.png)
 
 ```latex
 \begin{tikzpicture}
@@ -147,7 +144,7 @@
 
 
 
-![[2-3.png]]
+![](figures/2-3.png)
 
 ```latex
 \begin{tikzpicture}
@@ -167,7 +164,7 @@
 
 
 
-![[2-4.png]]
+![](figures/2-4.png)
 
 ```latex
 \begin{tikzpicture}
@@ -179,9 +176,9 @@
     \tkzDefPoint(\ex,0){D}
     \tkzDefSquare(C,B)\tkzGetPoints{I}{J}
     \tkzDefSquare(E,D)\tkzGetPoints{H}{G}
-    \tkzDrawPolygon[](C,B,I,J)
-    \tkzDrawPolygon[](B,A,E,F)
-    \tkzDrawPolygon[](D,E,G,H)
+    \tkzDrawPolygon![](C,B,I,J)
+    \tkzDrawPolygon![](B,A,E,F)
+    \tkzDrawPolygon![](D,E,G,H)
     \tkzDrawLine[add = .1 and .1](J,H)
     \node at (barycentric cs:C=1,B=1,I=1,J=1){$a$};
     \node at (barycentric cs:B=1,A=1,E=1,F=1){$c$};
@@ -192,7 +189,7 @@
 
 
 
-![[2-5.png]]
+![](figures/2-5.png)
 
 ```latex
 \begin{tikzpicture}
@@ -202,7 +199,7 @@
     \tkzDefMidPoint(A,C) \tkzGetPoint{E}
     \tkzDefPointsBy[projection=onto B--C](D){G}
     \tkzDefPointsBy[projection=onto B--C](E){F}
-    \tkzDrawPolygon[](D,G,F,E)
+    \tkzDrawPolygon![](D,G,F,E)
     \tkzLabelPoints[above](A,D,E)
     \tkzLabelPoints[below](B,C,F,G)
 \end{tikzpicture}
@@ -210,7 +207,7 @@
 
 
 
-![[2-6.png]]
+![](figures/2-6.png)
 
 ```latex
 \begin{tikzpicture}
@@ -228,13 +225,13 @@
 
 
 
-![[2-7.png]]
+![](figures/2-7.png)
 
 ```latex
 \begin{tikzpicture}
     \tkzDefPoints{0/0/B, 0/2/A}
     \tkzDefSquare(A,B)\tkzGetPoints{C}{D}
-    \tkzDrawPolygon[](A,B,C,D)
+    \tkzDrawPolygon![](A,B,C,D)
     \tkzDrawSegment(A,C)
     \tkzDefBarycentricPoint(A=1,B=4) \tkzGetPoint{E}
     \tkzDefBarycentricPoint(A=1,C=3) \tkzGetPoint{P}
@@ -247,7 +244,7 @@
 
 
 
-![[2-8.png]]
+![](figures/2-8.png)
 
 ```latex
 \begin{tikzpicture}
@@ -268,7 +265,7 @@
 
 
 
-![[2-9.png]]
+![](figures/2-9.png)
 
 ```latex
 \begin{tikzpicture}
@@ -292,7 +289,7 @@
 
 
 
-![[2-10.png]]
+![](figures/2-10.png)
 
 ```latex
 \begin{tikzpicture}
@@ -312,13 +309,13 @@
 
 
 
-![[2-11.png]]
+![](figures/2-11.png)
 
 ```latex
 \begin{tikzpicture}
     \tkzDefPoints{0/0/B, 0/2/A}
     \tkzDefSquare(A,B)\tkzGetPoints{C}{D}
-    \tkzDrawPolygon[](A,B,C,D)
+    \tkzDrawPolygon![](A,B,C,D)
     \tkzDrawSegment(B,D)
     \tkzDefMidPoint(B,D) \tkzGetPoint{O}
     \tkzDrawLine[bisector](D,B,C) \tkzGetPoint{E}
@@ -338,7 +335,7 @@
 
 
 
-![[2-12.png]]
+![](figures/2-12.png)
 
 ```latex
 \begin{tikzpicture}
@@ -396,7 +393,7 @@
 
 
 
-![[2-13.png]]
+![](figures/2-13.png)
 
 ```latex
 \begin{tikzpicture}
@@ -414,7 +411,7 @@
 
 
 
-![[2-14.png]]
+![](figures/2-14.png)
 
 ```latex
 \begin{tikzpicture}
@@ -430,7 +427,7 @@
 ```
 
 
-![[2-15.png]]
+![](figures/2-15.png)
 
 ```latex
 \begin{tikzpicture}
@@ -451,7 +448,7 @@
 
 
 
-![[2-16.png]]
+![](figures/2-16.png)
 
 ```latex
 \begin{tikzpicture}
@@ -469,7 +466,7 @@
 ```
 
 
-![[2-17.png]]
+![](figures/2-17.png)
 
 ```latex
 \begin{tikzpicture}
